@@ -41,5 +41,6 @@ readr::read_csv(attributes_path) %>%
 
 metadata_path <- "data/derived_data/metadata/"
 
-edit_biblio(metadata_dir = metadata_path)
-edit_access()
+#edit_biblio(metadata_dir = metadata_path)
+#edit_access(metadata_dir = metadata_path)
+edit_creators()
