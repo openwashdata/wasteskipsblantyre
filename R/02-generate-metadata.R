@@ -53,4 +53,5 @@ write_spice(metadata_path)
 fs::file_move(path = "data/derived_data/metadata/dataspice.json",
              new_path = here::here("waste-skips.json"))
 
-fs::file
+
+build_site(path = "waste-skips.json", out_path = "docs/index.html")
