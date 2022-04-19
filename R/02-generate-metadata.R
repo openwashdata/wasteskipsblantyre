@@ -44,3 +44,13 @@ metadata_path <- "data/derived_data/metadata/"
 #edit_biblio(metadata_dir = metadata_path)
 #edit_access(metadata_dir = metadata_path)
 edit_creators(metadata_path)
+
+
+# write JSON-LD -----------------------------------------------------------
+
+write_spice(metadata_path)
+
+fs::file_move(path = "data/derived_data/metadata/dataspice.json",
+             new_path = here::here("waste-skips.json"))
+
+fs::file
