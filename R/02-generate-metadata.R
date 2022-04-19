@@ -43,4 +43,4 @@ metadata_path <- "data/derived_data/metadata/"
 
 #edit_biblio(metadata_dir = metadata_path)
 #edit_access(metadata_dir = metadata_path)
-edit_creators()
+edit_creators(metadata_path)
