@@ -20,13 +20,13 @@ locations <- read_sf("./data-raw/GPS marked skips in Blantyre.kml")
 
 st_bbox(locations)
 
-wasteskipsblantyre <- locations %>% 
+wasteskipsblantyre <- locations |> 
   mutate(long = unlist(map(locations$geometry, 1)),
-         lat = unlist(map(locations$geometry, 2))) %>% 
-  st_drop_geometry() %>% 
-  select(-Description) %>% 
-  
+         lat = unlist(map(locations$geometry, 2))) |> 
+  st_drop_geometry() |> 
+  select(-Description) |>  
+  rename("name" = Name) |> 
   # enrich data
-  mutate(capacity = 7000)
+  mutate(capacity_l = 7000)
 
 usethis::use_data(wasteskipsblantyre, overwrite = TRUE)
