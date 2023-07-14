@@ -1,19 +1,26 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.5.0
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+ 
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-  - family-names: Yesaya
-    given-names: Mabvuto
-    orcid: https://orcid.org/0000-0003-3234-9699
-  - family-names: Msuku
-    given-names: Limbani 
-    orcid: https://orcid.org/0000-0002-9291-8462
-  - family-names: Schöbitz
-    given-names: Lars
-    orcid: https://orcid.org/0000-0003-2196-5015
-  - family-names: Tilley
-    given-names: Elizabeth
-    orcid: https://orcid.org/0000-0002-2095-9724
-title: "Locations of 53 public waste skips in Malawi, Blantyre."
-version: 0.0.1
-doi: https://zenodo.org/badge/latestdoi/483225869
-date-released: 2022-04-19
+message: 'To cite package "wasteskipsblantyre" in publications use:'
+type: software
+license: CC-BY-4.0
+title: 'wasteskipsblantyre: Locations of Public Waste Skips in Malawi'
+version: 0.0.0.9000
+abstract: An R data package containing the locations of public waste skips in Blantyre,
+  Malawi.
+references:
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  url: https://www.R-project.org/
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2023'
+  institution:
+    name: R Foundation for Statistical Computing
+  version: '>= 2.10'

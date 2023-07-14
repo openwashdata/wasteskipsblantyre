@@ -1,3 +1,4 @@
+## code to prepare `data_processing` dataset goes here
 
 # description -------------------------------------------------------------
 
@@ -15,11 +16,11 @@ library(stringr)
 
 # read data ---------------------------------------------------------------
 
-locations <- read_sf("data/raw_data/GPS marked skips in Blantyre.kml")
+locations <- read_sf("./data-raw/GPS marked skips in Blantyre.kml")
 
 st_bbox(locations)
 
-locations_df <- locations %>% 
+wasteskipsblantyre <- locations %>% 
   mutate(long = unlist(map(locations$geometry, 1)),
          lat = unlist(map(locations$geometry, 2))) %>% 
   st_drop_geometry() %>% 
@@ -28,5 +29,4 @@ locations_df <- locations %>%
   # enrich data
   mutate(capacity = 7000)
 
-write_csv(locations_df, file = "data/derived_data/public-waste-skips-blantyre-malawi.csv")
-
+usethis::use_data(wasteskipsblantyre, overwrite = TRUE)
