@@ -11,4 +11,4 @@
 #'   \item{capacity_l}{Capacity of the container in liters.}
 #' }
 #'
-"wastekipsblantyre"
+"wasteskipsblantyre"

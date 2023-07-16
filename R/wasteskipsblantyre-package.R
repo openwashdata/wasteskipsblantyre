@@ -1,5 +1,5 @@
 #' @keywords internal
-#' #' @aliases wasteskipsblantyre-package
+#' @aliases wasteskipsblantyre-package
 "_PACKAGE"
 
 ## usethis namespace: start
