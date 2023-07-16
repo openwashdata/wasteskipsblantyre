@@ -16,7 +16,7 @@ library(stringr)
 
 # read data ---------------------------------------------------------------
 
-locations <- read_sf("./data-raw/GPS marked skips in Blantyre.kml")
+locations <- read_sf("./data-raw/gps_marked_skips_in_blantyre.kml")
 
 st_bbox(locations)
 
