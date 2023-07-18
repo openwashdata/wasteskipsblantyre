@@ -8,7 +8,11 @@
 [![R-CMD-check](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of wasteskipsblantyre is to …
+# Overview
+
+The wasteskipsblantyre data package includes locations of the publicly
+accessible waste skips in Blantyre, Malawi. The data was collected in
+2021.
 
 ## Installation
 
@@ -20,35 +24,75 @@ You can install the development version of wasteskipsblantyre from
 devtools::install_github("Global-Health-Engineering/data-public-waste-skips-blantyre")
 ```
 
-## Example
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
 
-This is a basic example which shows you how to solve a common problem:
+| dataset            | CSV                                                                              | XLSX                                                                               |
+|:-------------------|:---------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
+| wasteskipsblantyre | [Download CSV](wasteskipsblantyre/tree/main/inst/extdata/wasteskipsblantyre.csv) | [Download XLSX](wasteskipsblantyre/tree/main/inst/extdata/wasteskipsblantyre.xlsx) |
+
+# Project
+
+## TITLE_OF_PROJECT
+
+(One sentence) Evaluating the potential of ……..
+
+### Description
+
+(One to two short paragraphs) This Project focuses on determining …….
+
+### Research Question
+
+(One to two questions)
+
+### Data
+
+The data set inlcludes the locations of the publicly accessible waste
+skips in Blantyre, Malawi. In the context of the *PROJECT_NAME* project
+described above the data was collected in *MONTH* of 2021.
+
+The package provides access to one data set.
 
 ``` r
 library(wasteskipsblantyre)
-## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+The `wasteskipsblantyre` data set has 4 variables and 53 observations.
+For an overview of the variable names, see the following table.
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+wasteskipsblantyre
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
+| variable_name | variable_type | description                          |
+|:--------------|:--------------|:-------------------------------------|
+| name          | character     | Name of the waste skip location.     |
+| long          | double        | Longitude of the location.           |
+| lat           | double        | Latitude of the location.            |
+| capacity_l    | double        | Capacity of the container in liters. |
 
-You can also embed plots, for example:
+<div class="figure">
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+<img src="man/figures/README-fig-waste-skips-simple-1.png" alt="A small visualisation of this data set" width="100%" />
+<p class="caption">
+A small visualisation of this data set
+</p>
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+</div>
+
+## Example
+
+This is a basic example which shows you how to use the data:
+
+``` r
+library(wasteskipsblantyre)
+library(sf)
+library(tmap)
+
+# read data set into a simple feature (spatial vector data)
+sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat'))
+# set mapping mode to interactive ("view")
+tmap_mode("view")
+# create an interactive map 
+qtm(sf_wsb)
+```

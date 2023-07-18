@@ -1,5 +1,11 @@
 ---
 output: github_document
+editor_options: 
+  chunk_output_type: console
+  markdown: 
+    wrap: 72
+execute:
+  echo: false
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -9,8 +15,14 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE
 )
+
+library(sf)
+library(tidyverse)
+library(tmap)
 ```
 
 # wasteskipsblantyre
@@ -19,7 +31,9 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of wasteskipsblantyre is to ...
+# Overview
+
+The wasteskipsblantyre data package includes locations of the publicly accessible waste skips in Blantyre, Malawi. The data was collected in 2021.
 
 ## Installation
 
@@ -30,27 +44,89 @@ You can install the development version of wasteskipsblantyre from [GitHub](http
 devtools::install_github("Global-Health-Engineering/data-public-waste-skips-blantyre")
 ```
 
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+```{r, echo=FALSE}
+
+extdata_path <- "wasteskipsblantyre/tree/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  mutate(file_name = str_remove(file_name, ".rda")) |> 
+  rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+# Project
+
+## TITLE_OF_PROJECT
+
+(One sentence) Evaluating the potential of ........
+
+### Description
+
+(One to two short paragraphs) This Project focuses on determining
+.......
+
+### Research Question
+
+(One to two questions)
+
+### Data
+
+The data set inlcludes the locations of the publicly accessible waste skips in Blantyre, Malawi. In the context of the *PROJECT_NAME* project described above the data was collected in *MONTH* of 2021.
+
+The package provides access to one data set.
+
+```{r, echo = TRUE}
+library(wasteskipsblantyre)
+```
+
+The `wasteskipsblantyre` data set has `r ncol(wasteskipsblantyre)` variables and `r nrow(wasteskipsblantyre)` observations. For an overview of the variable names, see the following table.  
+
+```{r, eval=FALSE}
+wasteskipsblantyre
+```
+
+```{r, echo=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |> 
+  dplyr::select(variable_name:description) |> 
+  knitr::kable()
+```
+
+
+```{r, echo=FALSE}
+#| label: fig-waste-skips-simple
+#| fig-cap: A small visualisation of this data set
+
+sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat'))
+tmap_mode("plot")
+sf_wsb |> 
+  tm_shape() +
+  tm_dots() +
+  tm_graticules()
+```
+
+
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to use the data:
 
-```{r example}
+```{r example, eval=FALSE, echo=TRUE}
 library(wasteskipsblantyre)
-## basic example code
+library(sf)
+library(tmap)
+
+# read data set into a simple feature (spatial vector data)
+sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat'))
+# set mapping mode to interactive ("view")
+tmap_mode("view")
+# create an interactive map 
+qtm(sf_wsb)
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
