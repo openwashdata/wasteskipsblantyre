@@ -1,7 +1,0 @@
----
-title: "manuscript-template"
----
-
-# Manuscript template
-
-This is a template for manuscripts written with Quarto.

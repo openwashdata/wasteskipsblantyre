@@ -1,0 +1,5 @@
+directory,file_name,variable_name,variable_type,description
+data/,wasteskipsblantyre,name,character,Name of the waste skip location.
+data/,wasteskipsblantyre,long,double,Longitude of the location.
+data/,wasteskipsblantyre,lat,double,Latitude of the location.
+data/,wasteskipsblantyre,capacity_l,double,Capacity of the container in liters.

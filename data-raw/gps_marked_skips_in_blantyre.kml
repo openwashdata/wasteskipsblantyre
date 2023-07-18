@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>gps_marked_skips_in_blantyre</name>
+    <description>There are a total of 53 skips in Blantyre and have all been GPS marked. </description>
+    <Style id="icon-1899-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-880E4F-labelson">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>GPS of skips in Blantyre</name>
+      <Placemark>
+        <name>Ndirande ground</name>
+        <description><![CDATA[Latitude: -15.775147819237624<br>Longitude: 35.05062928823672<br>Altitude: 1,140.588<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.775147819237624</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.05062928823672</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1140.588276172262</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0506292882367,-15.7751478192376,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chimwankhunda mosque</name>
+        <description><![CDATA[Latitude: -15.8270523<br>Longitude: 35.0148433<br>Altitude: 1,047.897<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8270523</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0148433</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1047.897474677198</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0148433,-15.8270523,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Naizi market</name>
+        <description><![CDATA[Latitude: -15.8496159<br>Longitude: 35.0881916<br>Altitude: 1,126.491<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8496159</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0881916</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1126.4906105327436</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0881916,-15.8496159,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Machinjiri market</name>
+        <description><![CDATA[Latitude: -15.744664723304924<br>Longitude: 35.08105190066925<br>Altitude: 1,036.612<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.744664723304924</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.08105190066925</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1036.6118859249466</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0810519006693,-15.7446647233049,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Lunzu market</name>
+        <description><![CDATA[Latitude: -15.730885215898478<br>Longitude: 35.056110506117044<br>Altitude: 986.131<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.730885215898478</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.056110506117044</value>
+          </Data>
+          <Data name="Altitude">
+            <value>986.13088723174</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.056110506117,-15.7308852158985,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Khama market</name>
+        <description><![CDATA[Latitude: -15.767706356135944<br>Longitude: 35.07455352178747<br>Altitude: 1,103.832<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.767706356135944</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.07455352178747</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1103.8316085167908</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0745535217875,-15.7677063561359,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nkolokoti market</name>
+        <description><![CDATA[Latitude: -15.7904719<br>Longitude: 35.0763238<br>Altitude: 1,176.824<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.7904719</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0763238</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1176.8241585822045</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0763238,-15.7904719,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kachere market</name>
+        <description><![CDATA[Latitude: -15.8079213<br>Longitude: 35.0841115<br>Altitude: 1,181.155<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8079213</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0841115</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1181.1554065849339</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0841115,-15.8079213,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kachere market</name>
+        <description><![CDATA[Latitude: -15.7934343<br>Longitude: 35.1053326<br>Altitude: 1,185.16<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.7934343</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.1053326</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1185.1603759993757</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.1053326,-15.7934343,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Naizi market</name>
+        <description><![CDATA[Latitude: -15.8494749<br>Longitude: 35.0823074<br>Altitude: 1,121.966<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8494749</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0823074</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1121.9658632086325</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0823074,-15.8494749,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bangwe market</name>
+        <description><![CDATA[Latitude: -15.8282683<br>Longitude: 35.084883<br>Altitude: 1,122.28<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8282683</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.084883</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1122.2802507905635</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.084883,-15.8282683,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bangwe market</name>
+        <description><![CDATA[Latitude: -15.8322942<br>Longitude: 35.088651<br>Altitude: 1,119.431<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8322942</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.088651</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1119.431255103347</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.088651,-15.8322942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bangwe market</name>
+        <description><![CDATA[Latitude: -15.8318935<br>Longitude: 35.0928606<br>Altitude: 1,119.688<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8318935</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0928606</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1119.68754031736</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0928606,-15.8318935,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bangwe ground</name>
+        <description><![CDATA[Latitude: -15.8162941<br>Longitude: 35.0902355<br>Altitude: 1,113.557<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8162941</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0902355</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1113.557494401702</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0902355,-15.8162941,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bangwe ground</name>
+        <description><![CDATA[Latitude: -15.8090997<br>Longitude: 35.0972343<br>Altitude: 1,120.434<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8090997</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0972343</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1120.4344758143418</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0972343,-15.8090997,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Limbe flea market</name>
+        <description><![CDATA[Latitude: -15.8129183<br>Longitude: 35.0641464<br>Altitude: 1,145.227<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8129183</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0641464</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1145.2266612557369</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0641464,-15.8129183,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Limbe market</name>
+        <description><![CDATA[Latitude: -15.8209911<br>Longitude: 35.0547397<br>Altitude: 1,139.678<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8209911</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0547397</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1139.6781150946563</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0547397,-15.8209911,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Limbe Hard Ware</name>
+        <description><![CDATA[Latitude: -15.8140027<br>Longitude: 35.04983<br>Altitude: 1,130.553<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8140027</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.04983</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1130.552832322148</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.04983,-15.8140027,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Limbe market</name>
+        <description><![CDATA[Latitude: -15.8122795<br>Longitude: 35.0589459<br>Altitude: 1,144.994<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8122795</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0589459</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1144.9940206152792</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0589459,-15.8122795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pafumbi bus terminal</name>
+        <description><![CDATA[Latitude: -15.8291657<br>Longitude: 35.0565254<br>Altitude: 1,132.578<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8291657</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0565254</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1132.5783432578608</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0565254,-15.8291657,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Likotima</name>
+        <description><![CDATA[Latitude: -15.853939420484762<br>Longitude: 35.05673289546417<br>Altitude: 1,139.072<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.853939420484762</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.05673289546417</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1139.0716074755255</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0567328954642,-15.8539394204848,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>I.T.G</name>
+        <description><![CDATA[Latitude: -15.8204747<br>Longitude: 35.0606009<br>Altitude: 1,151.692<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8204747</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0606009</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1151.692009423987</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0606009,-15.8204747,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chigumula</name>
+        <description><![CDATA[Latitude: -15.8861397<br>Longitude: 35.0517857<br>Altitude: 1,176.217<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8861397</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0517857</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1176.2169336342959</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0517857,-15.8861397,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chigumula</name>
+        <description><![CDATA[Latitude: -15.8874332<br>Longitude: 35.0443875<br>Altitude: 1,171.431<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8874332</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0443875</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1171.4314614678394</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0443875,-15.8874332,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BCA market</name>
+        <description><![CDATA[Latitude: -15.8441823<br>Longitude: 35.0630205<br>Altitude: 1,130.014<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8441823</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0630205</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1130.0137148751144</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0630205,-15.8441823,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BCA market</name>
+        <description><![CDATA[Latitude: -15.8444313<br>Longitude: 35.0693501<br>Altitude: 1,126.939<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8444313</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0693501</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1126.9393289990135</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0693501,-15.8444313,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>BCA market</name>
+        <description><![CDATA[Latitude: -15.8486964<br>Longitude: 35.0648825<br>Altitude: 1,132.984<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8486964</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0648825</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1132.984248515653</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0648825,-15.8486964,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chigumula</name>
+        <description><![CDATA[Latitude: -15.8929361<br>Longitude: 35.0506559<br>Altitude: 1,171.406<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-880E4F-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8929361</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0506559</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1171.405755207738</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0506559,-15.8929361,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ndirande ground</name>
+        <description><![CDATA[Latitude: -15.7767658006899<br>Longitude: 35.04772571519463<br>Altitude: 1,142.149<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.7767658006899</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.04772571519463</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1142.1485946205246</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0477257151946,-15.7767658006899,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ndirande market</name>
+        <description><![CDATA[Latitude: -15.776833921714937<br>Longitude: 35.03679903173739<br>Altitude: 1,096.061<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.776833921714937</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.03679903173739</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1096.0610715445036</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0367990317374,-15.7768339217149,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kameza round a bout</name>
+        <description><![CDATA[Latitude: -15.730363<br>Longitude: 35.0173168<br>Altitude: 883.479<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.730363</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0173168</value>
+          </Data>
+          <Data name="Altitude">
+            <value>883.4786844896006</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0173168,-15.730363,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chirimba market</name>
+        <description><![CDATA[Latitude: -15.744681227153237<br>Longitude: 35.01919828773752<br>Altitude: 945.923<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.744681227153237</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.01919828773752</value>
+          </Data>
+          <Data name="Altitude">
+            <value>945.9233074287972</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0191982877375,-15.7446812271532,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chirimba market</name>
+        <description><![CDATA[Latitude: -15.7443242<br>Longitude: 35.0220263<br>Altitude: 941.614<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.7443242</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0220263</value>
+          </Data>
+          <Data name="Altitude">
+            <value>941.6144449531799</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0220263,-15.7443242,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chiweto</name>
+        <description><![CDATA[Latitude: -15.746731102769271<br>Longitude: 35.01017701706342<br>Altitude: 906.239<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.746731102769271</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.01017701706342</value>
+          </Data>
+          <Data name="Altitude">
+            <value>906.2385167323624</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0101770170634,-15.7467311027693,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chemusa market</name>
+        <description><![CDATA[Latitude: -15.76600589494258<br>Longitude: 34.99935950836474<br>Altitude: 947.891<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.76600589494258</value>
+          </Data>
+          <Data name="Longitude">
+            <value>34.99935950836474</value>
+          </Data>
+          <Data name="Altitude">
+            <value>947.8907050436484</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            34.9993595083647,-15.7660058949426,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kayange</name>
+        <description><![CDATA[Latitude: -15.775749523888708<br>Longitude: 35.002675640453184<br>Altitude: 979.999<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.775749523888708</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.002675640453184</value>
+          </Data>
+          <Data name="Altitude">
+            <value>979.9994718429429</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0026756404532,-15.7757495238887,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mbayani market</name>
+        <description><![CDATA[Latitude: -15.77596025876754<br>Longitude: 35.00804651804371<br>Altitude: 983.344<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.77596025876754</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.00804651804371</value>
+          </Data>
+          <Data name="Altitude">
+            <value>983.3438518080782</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0080465180437,-15.7759602587675,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mbwerela</name>
+        <description><![CDATA[Latitude: -15.77072554866698<br>Longitude: 34.99452812291154<br>Altitude: 980.486<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.77072554866698</value>
+          </Data>
+          <Data name="Longitude">
+            <value>34.99452812291154</value>
+          </Data>
+          <Data name="Altitude">
+            <value>980.4859399014355</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            34.9945281229115,-15.770725548667,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chilomoni market</name>
+        <description><![CDATA[Latitude: -15.773443927770465<br>Longitude: 34.98171601095058<br>Altitude: 988.12<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.773443927770465</value>
+          </Data>
+          <Data name="Longitude">
+            <value>34.98171601095058</value>
+          </Data>
+          <Data name="Altitude">
+            <value>988.1200149611494</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            34.9817160109506,-15.7734439277705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fargo</name>
+        <description><![CDATA[Latitude: -15.7759035<br>Longitude: 34.9831392<br>Altitude: 984.402<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.7759035</value>
+          </Data>
+          <Data name="Longitude">
+            <value>34.9831392</value>
+          </Data>
+          <Data name="Altitude">
+            <value>984.4015326194836</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            34.9831392,-15.7759035,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nthukwa market</name>
+        <description><![CDATA[Latitude: -15.763809966055861<br>Longitude: 34.979985359887635<br>Altitude: 991.949<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.763809966055861</value>
+          </Data>
+          <Data name="Longitude">
+            <value>34.979985359887635</value>
+          </Data>
+          <Data name="Altitude">
+            <value>991.9485927397789</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            34.9799853598876,-15.7638099660559,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blantyre flea market</name>
+        <description><![CDATA[Latitude: -15.788635987995853<br>Longitude: 35.00640615446094<br>Altitude: 1,023.272<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.788635987995853</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.00640615446094</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1023.2721175595246</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0064061544609,-15.7886359879959,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mibawa Bus terminals</name>
+        <description><![CDATA[Latitude: -15.7885589<br>Longitude: 35.0089775<br>Altitude: 1,013.001<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.7885589</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0089775</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1013.0008266297308</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0089775,-15.7885589,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blantyre market</name>
+        <description><![CDATA[Latitude: -15.7944906<br>Longitude: 35.0087927<br>Altitude: 1,007.175<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.7944906</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0087927</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1007.1752861125345</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0087927,-15.7944906,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Malekano</name>
+        <description><![CDATA[Latitude: -15.810266465184075<br>Longitude: 34.99187904896554<br>Altitude: 971.45<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.810266465184075</value>
+          </Data>
+          <Data name="Longitude">
+            <value>34.99187904896554</value>
+          </Data>
+          <Data name="Altitude">
+            <value>971.4496432063991</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            34.9918790489655,-15.8102664651841,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Manase Market</name>
+        <description><![CDATA[Latitude: -15.812018260681365<br>Longitude: 34.99330452600681<br>Altitude: 988.967<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.812018260681365</value>
+          </Data>
+          <Data name="Longitude">
+            <value>34.99330452600681</value>
+          </Data>
+          <Data name="Altitude">
+            <value>988.9667518559348</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            34.9933045260068,-15.8120182606814,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chilobwe</name>
+        <description><![CDATA[Latitude: -15.832450580652814<br>Longitude: 35.00571967208792<br>Altitude: 1,051.209<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.832450580652814</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.00571967208792</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1051.2093368984933</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0057196720879,-15.8324505806528,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thawale market</name>
+        <description><![CDATA[Latitude: -15.8196523<br>Longitude: 35.0117058<br>Altitude: 1,042.154<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8196523</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0117058</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1042.154381436416</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0117058,-15.8196523,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Zingwangwa water board</name>
+        <description><![CDATA[Latitude: -15.8164725<br>Longitude: 35.0177456<br>Altitude: 1,039.962<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8164725</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.0177456</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1039.961691475274</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0177456,-15.8164725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Zingwangwa mosque</name>
+        <description><![CDATA[Latitude: -15.8154094<br>Longitude: 35.008295<br>Altitude: 1,017.788<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.8154094</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.008295</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1017.7877343685356</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.008295,-15.8154094,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Soche market</name>
+        <description><![CDATA[Latitude: -15.809398176274891<br>Longitude: 35.01530832804784<br>Altitude: 1,044.042<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.809398176274891</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.01530832804784</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1044.0422932045435</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0153083280478,-15.8093981762749,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wenela Bus terminal</name>
+        <description><![CDATA[Latitude: -15.785683424013863<br>Longitude: 35.01576019730125<br>Altitude: 1,051.406<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.785683424013863</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.01576019730125</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1051.4055638363761</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0157601973012,-15.7856834240139,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Queens Guardian shelter</name>
+        <description><![CDATA[Latitude: -15.802852583209049<br>Longitude: 35.019052113496606<br>Altitude: 1,071.046<br>Precision: 4]]></description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Latitude">
+            <value>-15.802852583209049</value>
+          </Data>
+          <Data name="Longitude">
+            <value>35.019052113496606</value>
+          </Data>
+          <Data name="Altitude">
+            <value>1071.0463816373522</value>
+          </Data>
+          <Data name="Precision">
+            <value>4.0</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            35.0190521134966,-15.802852583209,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -1,5 +1,0 @@
-fileName,variableName,description,unitText
-public-waste-skips-blantyre-malawi.csv,Name,Name of the waste skip location.,NA
-public-waste-skips-blantyre-malawi.csv,long,Longitude of the location.,NA
-public-waste-skips-blantyre-malawi.csv,lat,Latitude of the location.,NA
-public-waste-skips-blantyre-malawi.csv,capacity,Capacity of the container.,liters
