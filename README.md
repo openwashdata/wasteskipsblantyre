@@ -48,8 +48,8 @@ file from the table below.
 ### Data
 
 The data set inlcludes the locations of the publicly accessible waste
-skips in Blantyre, Malawi. In the context of the *PROJECT_NAME* project
-described above the data was collected in *MONTH* of 2021.
+skips in Blantyre, Malawi. In the context of the **PROJECT_NAME**
+project described above the data was collected in **MONTH** of 2021.
 
 The package provides access to one data set.
 
