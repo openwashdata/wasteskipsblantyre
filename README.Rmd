@@ -28,6 +28,7 @@ library(tmap)
 # wasteskipsblantyre
 
 <!-- badges: start -->
+[![DOI](https://zenodo.org/badge/483225869.svg)](https://zenodo.org/badge/latestdoi/483225869)
 [![R-CMD-check](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
@@ -39,7 +40,7 @@ The wasteskipsblantyre data package includes locations of the publicly accessibl
 
 You can install the development version of wasteskipsblantyre from [GitHub](https://github.com/) with:
 
-``` r
+```{r eval=FALSE, echo=TRUE}
 # install.packages("devtools")
 devtools::install_github("Global-Health-Engineering/data-public-waste-skips-blantyre")
 ```

@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![DOI](https://zenodo.org/badge/483225869.svg)](https://zenodo.org/badge/latestdoi/483225869)
 [![R-CMD-check](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
