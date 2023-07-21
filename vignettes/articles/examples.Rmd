@@ -1,14 +1,271 @@
 ---
-title: "examples"
+title: "Examples"
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false
+  message: false
+  warning: false
 ---
 
-```{r, include = FALSE}
+```{r unknown_chunk, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
 
-```{r setup}
+::: callout-note
+**The following article is an example of how easy it is to work with the data package and produce new insights using the data package.**
+:::
+
+```{r setup, echo = TRUE, output = FALSE, message = FALSE, warning = FALSE}
+# install.packages("devtools")
+# devtools::install_github("openwashdata/wasteskipsblantyre")
 library(wasteskipsblantyre)
+library(tidyverse)
+library(sf)
+library(tmap)
+library(here)
+library(httr)
 ```
+
+```{r scrape_datasets, eval=FALSE, include=FALSE}
+
+# # get traditional authorities boundaries
+# # download and unzip maps from https://data.humdata.org
+# utils::download.file(url = "<https://data.humdata.org/dataset/9f3896ae-d77b-414a-85ef-8ede33389ed0/resource/ac6dfe69-3e06-4b16-907f-18d5674ecbc7/download/mwi_ta_adm3_nso_2018_20190327.zip>",
+#                      destfile = here::here("vignettes", "articles",
+#                                            "traditional-authorities.zip"),
+#                      mode = "wb")
+# unzip(here::here("vignettes", "articles", "traditional-authorities.zip"), exdir = here::here("vignettes", "articles", "traditional-authorities"))
+# 
+# # remove zip file
+# file.remove(here::here("vignettes", "articles", "traditional-authorities.zip"))
+
+# # download and unzip cenusus data from https://data.humdata.org
+# utils::download.file(url = "https://data.humdata.org/dataset/9f3896ae-d77b-414a-85ef-8ede33389ed0/resource/8e3dcdeb-a2e6-4f84-aa3f-5430761b88b6/download/2018_census_total_number_of-hh-per-ea-csv.csv",
+#                      destfile = here::here("vignettes", "articles",
+#                                            "traditional-authorities", 
+#                                            "census_data.csv"),
+#                      mode = "wb")
+```
+
+```{r read_data, include=FALSE}
+  
+# read in traditional authority boundaries data
+census_boundaries <- 
+  st_read(here::here("vignettes", "articles",
+                     "traditional-authorities", "Malawi_TA_2018.shp")) |> 
+  st_as_sf()
+
+census_data <- read_csv(here::here("vignettes", "articles", 
+                                   "traditional-authorities", 
+                                   "census_data.csv"))
+
+# read waste skips locations into a simple feature (spatial vector data)
+# set coordinate reference system equal to census_boundaries
+sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat')) |>
+  st_set_crs(value = 4326) |> 
+  st_transform(st_crs(census_boundaries))
+```
+
+```{r explore_data, eval=FALSE, include=FALSE}
+# set mapping mode to interactive ("view")
+tmap_mode("view")
+
+# create an interactive map 
+qtm(sf_wsb)
+
+# explore boundaries
+as_tibble(census_boundaries)
+glimpse(census_boundaries)
+view(census_boundaries)
+
+census_boundaries |> 
+  filter(REG_NAME == "Southern",
+         DIST_NAME == "Blantyre City" | TA_NAME == "TA Kapeni") |>
+  qtm() +
+  qtm(sf_wsb)
+```
+
+## Background
+
+Malawi is a eastern sub-Saharan state. For this article the area of the city of Blantyre has been explored as depicted in @fig-boundaries-blantyre.
+
+```{r #fig-boundaries-blantyre, echo=FALSE, message=FALSE, warning=FALSE}
+#| fig-cap: Boundaries of Blantyre City and its traditional authorities
+  
+tmap_mode("view")
+
+census_boundaries |> 
+  filter(DIST_NAME == "Blantyre City") |> 
+  qtm()
+```
+
+The city is divided in `r nrow(filter(census_boundaries, DIST_NAME == "Blantyre City"))` traditional authorities. This article will use these areas to explore and emphasize on the data contained in the `wasteskipsblantyre` package. The data set stores the locations of publicly accessible waste skips in Blantyre (@fig-locations) and was collected in 2021.
+
+```{r #fig-locations, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: fig-locations
+#| fig-cap: Locations of public waste skips in Blantyre
+
+census_boundaries |> 
+  filter(DIST_NAME == "Blantyre City") |>
+  group_by(TA_NAME) |> 
+  summarise(TA_CODE, OBJECTID) |> 
+  qtm() +
+  qtm(sf_wsb)
+```
+
+In addition, data from the 2018 Malawi Census population data set shared by National Statistical Office is used for some demographic analysis.
+
+## Hypothesis
+
+In the context of this fictional article we define a hypothesis:
+
+*The number of waste skips within an traditional authorities correlates with the area of each authority.*
+
+## Analysis
+
+```{r join-data, echo=FALSE}
+# join data sets
+joined_dataset <- st_join(census_boundaries, sf_wsb) |> 
+  mutate(name = ifelse((DIST_NAME == "Blantyre City")*is.na(name),
+                       yes = TA_NAME, no = name)) |> 
+  mutate(capacity_l = ifelse((DIST_NAME == "Blantyre City")*(is.na(capacity_l)), 
+                             yes = 0, no =capacity_l)) |> 
+  drop_na(capacity_l)
+```
+
+First, we have a separate look into the the the waste skips data and the data from the 2018 census for each traditional authority within Blantyre which are also called wards. After that we compare the the two data sets and look for possible correlations.
+
+### Waste skips data
+
+The location of `r nrow(wasteskipsblantyre)` public waste skips has been determined. In @fig-count-ta it is visible that number of waste skips in a traditional authority vary between 0 and 4. In average, there are 2.2 waste skips in a traditional authority.
+
+```{r #fig-count-ta, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: fig-count-ta
+#| fig-cap: Number of waste skips in each traditional authority. 
+
+count_ta <- joined_dataset |> 
+  group_by(TA_NAME) |> 
+  summarise(n = sum(capacity_l)/7000) |> 
+  mutate(mean_number = mean(n)) 
+
+count_ta |> 
+  ggplot(aes(y = TA_NAME, x = n)) +
+  geom_col() +
+  geom_vline(xintercept = 2.21)  
+```
+
+The city center is located to the west of the city. In @fig-map-count a slight difference between the western and the north-eastern wards can be recognized. Nevertheless, it is very difficult to see any tendencies with regard to geographical location of the waste skips.
+
+```{r #fig-map-count, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: fig-map-count
+#| fig-cap: Map of the wards in Blantyre highlighting the number of waste skips.
+
+joined_dataset |>
+  group_by(TA_NAME) |> 
+  summarise(n = factor(sum(capacity_l)/7000)) |>
+  mutate(n = factor(n, levels = c(0:4))) |> 
+  tm_shape() +
+  tm_borders() +
+  tm_fill(col = "n", palette = "RdPu", alpha = 0.7) +
+  qtm(sf_wsb)
+```
+
+### Population data
+
+In 2018, Blantyre City's population was `r as.numeric(summarise(filter(census_data, DISTRICT == "Blantyre City"), sum(TOTAL_POP)))`. The population for each ward can be seen the following @fig-barplot-pop
+
+```{r #fig-barplot_pop, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: fig-barplot-pop
+#| fig-cap: Population per ward.
+
+pop_ta <- joined_dataset |> 
+  group_by(TA_NAME) |> 
+  summarise(n = sum(capacity_l)/7000) |> 
+  left_join(census_data) |> 
+  summarise(ta_pop = sum(TOTAL_POP), .by = TA_NAME)
+
+pop_ta |> 
+  ggplot() +
+  geom_col(aes(x = ta_pop, y = TA_NAME))
+
+```
+
+Since the areas of the wards differ, we will have a look into the population density of the wards in @fig-barplot-density.
+
+```{r #fig-barplot-density, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: fig-barplot-density
+#| fig-cap: Population density per ward.
+density_data <- joined_dataset |> 
+  group_by(TA_NAME) |> 
+  summarise(n = sum(capacity_l)/7000) |> 
+  left_join(census_data) |> 
+  group_by(TA_NAME) |> 
+  summarise(ta_pop = sum(TOTAL_POP),
+            n = mean(n))
+
+density_data <- density_data |> 
+  mutate(area_km2 = as.numeric(st_area(density_data)/1000000),
+         density_popkm2 = ta_pop/area_km2)
+
+density_data |> 
+  ggplot() +
+  geom_col(aes(x = density_popkm2, y = TA_NAME))
+
+```
+
+### Comparison
+
+In order to cross check the data and validate the hypothesis the data sets are linked together and visualized in the following figures.
+
+@fig-count-pop doesn't really show a correlation between the number of waste skips and the population of the wards. Nevertheless, the four most populated wards have more than 3 waste skips.
+
+```{r #fig-count-pop, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: fig-count-pop
+#| fig-cap: Ward population, coloured by the number of waste skips within the ward.
+
+count_ta |> 
+  left_join(st_drop_geometry(pop_ta)) |> 
+  ggplot() +
+  geom_col(aes(x = ta_pop, y = TA_NAME, fill = factor(n))) +
+  scale_fill_brewer(palette = "RdPu")
+```
+
+Also the population density appears to not have an influence on the placement of a waste skip as seen in @fig-count-density. It is interesting to see that the Ndirande Makata Ward and the Ndirande Gamulani Ward do not have a waste skip even though they are the 3rd and 4th most densely populated areas of the city.
+
+```{r #fig-count-density, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: fig-count-density
+#| fig-cap: Ward population density, coloured by the number of waste skips within the ward.
+
+density_data <- joined_dataset |> 
+  group_by(TA_NAME) |> 
+  summarise(n = sum(capacity_l)/7000) |> 
+  left_join(census_data) |> 
+  group_by(TA_NAME) |> 
+  summarise(ta_pop = sum(TOTAL_POP),
+            n = mean(n))
+
+density_data <- density_data |> 
+  mutate(area_km2 = as.numeric(st_area(density_data)/1000000),
+         density_popkm2 = ta_pop/area_km2)
+
+density_data |> 
+  ggplot() +
+  geom_col(aes(x = density_popkm2, y = TA_NAME, fill = factor(n))) +
+  scale_fill_brewer(palette = "RdPu")
+```
+
+## Discussion
+
+Short discussion about the analysis..
+
+## Conclusion
+
+Unfortunately, the hypothesis could not be verified. There is no correlation between the location of waste skips and the population of the wards of Blantyre.
+
+::: callout-note
+**We hope you enjoyed this fictional article!!**
+:::
