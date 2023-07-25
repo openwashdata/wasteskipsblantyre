@@ -39,9 +39,9 @@ The wasteskipsblantyre data package includes locations of the publicly accessibl
 
 You can install the development version of wasteskipsblantyre from [GitHub](https://github.com/) with:
 
-``` r
+```{r echo=TRUE, eval=FALSE}
 # install.packages("devtools")
-devtools::install_github("Global-Health-Engineering/data-public-waste-skips-blantyre")
+devtools::install_github("openwashdata/wasteskipsblantyre")
 ```
 
 Alternatively, you can download the individual datasets as a CSV or XLSX
@@ -105,9 +105,9 @@ readr::read_csv("data-raw/dictionary.csv") |>
 #| label: fig-waste-skips-simple
 #| fig-cap: A small visualisation of this data set
 
-sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat'))
+sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat'), crs = 4326)
 tmap_mode("plot")
-sf_wsb |> 
+sf_wsb |>
   tm_shape() +
   tm_dots() +
   tm_graticules()
@@ -123,7 +123,7 @@ library(sf)
 library(tmap)
 
 # read data set into a simple feature (spatial vector data)
-sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat'))
+sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat'), crs = 4326)
 # set mapping mode to interactive ("view")
 tmap_mode("view")
 # create an interactive map 

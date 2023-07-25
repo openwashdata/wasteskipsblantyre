@@ -21,7 +21,7 @@ You can install the development version of wasteskipsblantyre from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("Global-Health-Engineering/data-public-waste-skips-blantyre")
+devtools::install_github("openwashdata/wasteskipsblantyre")
 ```
 
 Alternatively, you can download the individual datasets as a CSV or XLSX
@@ -64,12 +64,12 @@ For an overview of the variable names, see the following table.
 wasteskipsblantyre
 ```
 
-| variable_name | variable_type | description                          |
-|:--------------|:--------------|:-------------------------------------|
-| name          | character     | Name of the waste skip location.     |
-| long          | double        | Longitude of the location.           |
-| lat           | double        | Latitude of the location.            |
-| capacity_l    | double        | Capacity of the container in liters. |
+| variable_name | variable_type | description                                   |
+|:--------------|:--------------|:----------------------------------------------|
+| name          | character     | Name of the waste skip location.              |
+| long          | double        | Longitude of the location as decimal degrees. |
+| lat           | double        | Latitude of the location as decimal degrees.  |
+| capacity_l    | double        | Capacity of the container in liters.          |
 
 <div class="figure">
 
@@ -90,7 +90,7 @@ library(sf)
 library(tmap)
 
 # read data set into a simple feature (spatial vector data)
-sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat'))
+sf_wsb <- st_as_sf(wasteskipsblantyre, coords = c('long', 'lat'), crs = 4326)
 # set mapping mode to interactive ("view")
 tmap_mode("view")
 # create an interactive map 
