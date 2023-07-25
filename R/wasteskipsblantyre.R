@@ -6,8 +6,8 @@
 #' @format A tibble with 53 rows and 4 variables:
 #' \describe{
 #'   \item{name}{Name of the waste skip location.}
-#'   \item{long}{Longitude of the location.}
-#'   \item{lat}{Latitude of the location.}
+#'   \item{long}{Longitude of the location as decimal degrees.}
+#'   \item{lat}{Latitude of the location as decimal degrees.}
 #'   \item{capacity_l}{Capacity of the container in liters.}
 #' }
 #'
