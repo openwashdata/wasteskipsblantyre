@@ -13,8 +13,8 @@ pkgdown:
   as_is: true
 vignette: >
   %\VignetteIndexEntry{Examples}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
 ---
 
 ```{r unknown_chunk, include=FALSE}
@@ -112,7 +112,7 @@ census_boundaries |>
 
 ## Background
 
-Malawi is a eastern sub-Saharan state. For this article the area of the city of Blantyre has been explored as depicted in the following map section.
+Malawi is an eastern sub-Saharan state. For this article the area of the city of Blantyre has been explored as depicted in the following map section.
 
 ```{r boundaries-blantyre, eval=FALSE, message=FALSE, warning=FALSE}
 tmap_mode("view")
