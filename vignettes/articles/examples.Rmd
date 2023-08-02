@@ -31,7 +31,7 @@ knitr::opts_chunk$set(
 ```
 
 ::: callout-note
-**The following article is an example of how easy it is to work with the data package and produce new insights using the data package.**
+**The following article is an example that shows how to work with the data package and produce insights using R.**
 :::
 
 ## Setting things up
@@ -75,7 +75,7 @@ library(httr)
 First, additional files including data sets with specific census data about Blantyre has been added to the package from <https://data.humdata.org>. For this fictional article we will use spatial data and therefore, the data has to be read in as [simple features](https://en.wikipedia.org/wiki/Simple_Features) using the [`sf-package`](https://r-spatial.github.io/sf/) as you can see in the following code junk.
 
 ```{r read-data, echo=TRUE, results='hide'}
-# read in traditional authority boundaries data
+# read in ward boundaries data
 census_boundaries <- 
   st_read(here::here("vignettes", "articles",
                      "traditional-authorities", "Malawi_TA_2018.shp")) |> 
@@ -145,7 +145,7 @@ In addition, data from the 2018 Malawi Census population data set shared by Nati
 
 In the context of this fictional article we define a hypothesis:
 
-*The number of waste skips within an traditional authorities correlates with the area of each authority.*
+*The number of waste skips within traditional authorities (wards) correlates with the area of each authority.*
 
 ## Analysis
 
@@ -159,13 +159,13 @@ joined_dataset <- st_join(census_boundaries, sf_wsb) |>
   drop_na(capacity_l)
 ```
 
-First, we have a separate look into the the the waste skips data and the data from the 2018 census for each traditional authority within Blantyre which are also called wards. After that we compare the the two data sets and look for possible correlations.
+First, we have a separate look into the the the waste skips data and the data from the 2018 census for each ward within Blantyre which are also called wards. After that we compare the the two data sets and look for possible correlations.
 
 ### Waste Skips Data
 
-The location of `r nrow(wasteskipsblantyre)` public waste skips has been determined. In Figure \@ref(fig:count-ta) it is visible that number of waste skips in a traditional authority vary between 0 and 4. In average, there are 2.2 waste skips in a traditional authority.
+The location of `r nrow(wasteskipsblantyre)` public waste skips has been determined. In Figure \@ref(fig:count-ta) it is visible that number of waste skips in a ward vary between 0 and 4. On average, there are 2.2 waste skips in a ward.
 
-```{r count-ta, fig.cap="Number of waste skips in each traditional authority.", echo=FALSE, message=FALSE, warning=FALSE}
+```{r count-ta, fig.cap="Number of waste skips in each ward.", echo=FALSE, message=FALSE, warning=FALSE}
 
 count_ta <- joined_dataset |> 
   group_by(TA_NAME) |> 
@@ -206,7 +206,15 @@ join_dataset |>
 
 ### Population Data Figure
 
-In 2018, Blantyre City's population was `r as.numeric(summarise(filter(census_data, DISTRICT == "Blantyre City"), sum(TOTAL_POP)))`. The population for each ward can be seen the following Figure \@ref(fig:barplot-pop).
+```{r, echo=FALSE}
+pop_blantyre <- as.numeric(summarise(filter(census_data, DISTRICT == "Blantyre City"), sum(TOTAL_POP)))
+
+gt::vec_fmt_number(pop_blantyre, decimals = 0)
+
+```
+
+
+In 2018, Blantyre City's population was `r gt::vec_fmt_number(pop_blantyre, decimals = 0)`. The population for each ward can be seen the following Figure \@ref(fig:barplot-pop).
 
 ```{r barplot-pop, fig.cap="Population per ward.", echo=FALSE, message=FALSE, warning=FALSE}
 
@@ -296,10 +304,10 @@ density_data |>
 
 ## Conclusion
 
-Unfortunately, the hypothesis could not be verified. There is no correlation between the location of waste skips and the population of the wards of Blantyre.
+The hypothesis could not be verified. There is no clear correlation between the location of waste skips and the population of the wards of Blantyre.
 
 ::: callout-note
-**We hope you enjoyed this fictional article!!**
+**We hope you enjoyed this fictional article!**
 
 Please, check the [source code](https://github.com/openwashdata/wasteskipsblantyre/blob/main/vignettes/articles/examples.Rmd) for more insights.
 :::

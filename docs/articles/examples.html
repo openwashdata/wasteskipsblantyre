@@ -70,7 +70,7 @@
     
     
 <div class="callout-note">
-<p><strong>The following article is an example of how easy it is to work with the data package and produce new insights using the data package.</strong></p>
+<p><strong>The following article is an example that shows how to work with the data package and produce insights using R.</strong></p>
 </div>
 <div class="section level2">
 <h2 id="setting-things-up">Setting things up<a class="anchor" aria-label="anchor" href="#setting-things-up"></a>
@@ -93,7 +93,7 @@
 </h3>
 <p>First, additional files including data sets with specific census data about Blantyre has been added to the package from <a href="https://data.humdata.org" class="external-link uri">https://data.humdata.org</a>. For this fictional article we will use spatial data and therefore, the data has to be read in as <a href="https://en.wikipedia.org/wiki/Simple_Features" class="external-link">simple features</a> using the <a href="https://r-spatial.github.io/sf/" class="external-link"><code>sf-package</code></a> as you can see in the following code junk.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># read in traditional authority boundaries data</span></span>
+<code class="sourceCode R"><span><span class="co"># read in ward boundaries data</span></span>
 <span><span class="va">census_boundaries</span> <span class="op">&lt;-</span> </span>
 <span>  <span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_read.html" class="external-link">st_read</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://here.r-lib.org//reference/here.html" class="external-link">here</a></span><span class="op">(</span><span class="st">"vignettes"</span>, <span class="st">"articles"</span>,</span>
 <span>                     <span class="st">"traditional-authorities"</span>, <span class="st">"Malawi_TA_2018.shp"</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
@@ -141,20 +141,20 @@
 <h2 id="hypothesis">Hypothesis<a class="anchor" aria-label="anchor" href="#hypothesis"></a>
 </h2>
 <p>In the context of this fictional article we define a hypothesis:</p>
-<p><em>The number of waste skips within an traditional authorities correlates with the area of each authority.</em></p>
+<p><em>The number of waste skips within traditional authorities (wards) correlates with the area of each authority.</em></p>
 </div>
 <div class="section level2">
 <h2 id="analysis">Analysis<a class="anchor" aria-label="anchor" href="#analysis"></a>
 </h2>
-<p>First, we have a separate look into the the the waste skips data and the data from the 2018 census for each traditional authority within Blantyre which are also called wards. After that we compare the the two data sets and look for possible correlations.</p>
+<p>First, we have a separate look into the the the waste skips data and the data from the 2018 census for each ward within Blantyre which are also called wards. After that we compare the the two data sets and look for possible correlations.</p>
 <div class="section level3">
 <h3 id="waste-skips-data">Waste Skips Data<a class="anchor" aria-label="anchor" href="#waste-skips-data"></a>
 </h3>
-<p>The location of 53 public waste skips has been determined. In Figure <a href="#fig:count-ta">1</a> it is visible that number of waste skips in a traditional authority vary between 0 and 4. In average, there are 2.2 waste skips in a traditional authority.</p>
+<p>The location of 53 public waste skips has been determined. In Figure <a href="#fig:count-ta">1</a> it is visible that number of waste skips in a ward vary between 0 and 4. On average, there are 2.2 waste skips in a ward.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:count-ta"></span>
-<img src="examples_files/figure-html/figure-count-ta-1.png" alt="Number of waste skips in each traditional authority." width="100%"><p class="caption">
-Figure 1: Number of waste skips in each traditional authority.
+<img src="examples_files/figure-html/figure-count-ta-1.png" alt="Number of waste skips in each ward." width="100%"><p class="caption">
+Figure 1: Number of waste skips in each ward.
 </p>
 </div>
 <p>The city center is located to the west of the city. In the map below, a slight difference between the western and the north-eastern wards can be recognized. Nevertheless, it is very difficult to see any tendencies with regard to geographical location of the waste skips. At most, one could say that there tend to be more waste skips in the western part of Blantyre, where the city center is located.</p>
@@ -182,7 +182,8 @@ Figure 1: Number of waste skips in each traditional authority.
 <div class="section level3">
 <h3 id="population-data-figure">Population Data Figure<a class="anchor" aria-label="anchor" href="#population-data-figure"></a>
 </h3>
-<p>In 2018, Blantyre City’s population was 8.00264^{5}. The population for each ward can be seen the following Figure <a href="#fig:barplot-pop">2</a>.</p>
+<pre><code><span><span class="co">#&gt; [1] "800,264"</span></span></code></pre>
+<p>In 2018, Blantyre City’s population was 800,264. The population for each ward can be seen the following Figure <a href="#fig:barplot-pop">2</a>.</p>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:barplot-pop"></span>
 <img src="examples_files/figure-html/figure-barplot-pop-1.png" alt="Population per ward." width="100%"><p class="caption">
@@ -220,9 +221,9 @@ Figure 5: Ward population density, coloured by the number of waste skips within 
 <div class="section level2">
 <h2 id="conclusion">Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"></a>
 </h2>
-<p>Unfortunately, the hypothesis could not be verified. There is no correlation between the location of waste skips and the population of the wards of Blantyre.</p>
+<p>The hypothesis could not be verified. There is no clear correlation between the location of waste skips and the population of the wards of Blantyre.</p>
 <div class="callout-note">
-<p><strong>We hope you enjoyed this fictional article!!</strong></p>
+<p><strong>We hope you enjoyed this fictional article!</strong></p>
 <p>Please, check the <a href="https://github.com/openwashdata/wasteskipsblantyre/blob/main/vignettes/articles/examples.Rmd">source code</a> for more insights.</p>
 </div>
 </div>
