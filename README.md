@@ -118,15 +118,17 @@ citation("wasteskipsblantyre")
 #> 
 #>   Yesaya M, Msuku L, Tilley E, Loos S (2023). "wasteskipsblantyre:
 #>   Locations of Public Waste Skips in Blantyre, Malawi."
-#>   doi:10.5281/zenodo.6470427 <https://doi.org/10.5281/zenodo.6470427>.
+#>   doi:10.5281/zenodo.6470427 <https://doi.org/10.5281/zenodo.6470427>,
+#>   <https://openwashdata.github.io/wasteskipsblantyre/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Misc{yesayamsuku,
+#>   @Misc{yesayamsuku:2023,
 #>     title = {wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi},
 #>     author = {Mabvuto Yesaya and Limbani Msuku and Elizabeth Tilley and Sebastian Camilo Loos},
-#>     doi = {10.5281/zenodo.6470427},
 #>     year = {2023},
+#>     url = {https://openwashdata.github.io/wasteskipsblantyre/},
+#>     doi = {10.5281/zenodo.6470427},
 #>     abstract = {An R data package containing the locations of public waste skips in Blantyre, Malawi.},
 #>     version = {0.0.2},
 #>   }
