@@ -16,7 +16,7 @@
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]--><script defer data-domain="openwashdata.github.io/wasteskipsblantyre" src="https://plausible.io/js/script.js"></script>
+<![endif]--><script defer data-domain="openwashdata.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -62,11 +62,8 @@
 <!-- badges: start -->
 
 <!-- badges: end -->
-</div>
-<div class="section level1">
-<h1 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
-</h1>
-<p>The wasteskipsblantyre data package includes locations of the publicly accessible waste skips in Blantyre, Malawi. The data was collected in 2021.</p>
+<p>The goal of wasteskipsblantyre is to provide a great dataset for research and planning of solid waste management in Blantyre, Malawi. The dataset includes locations of the publicly accessible waste skips in in the city. The data was collected in 2021 and has not been updated since.</p>
+<p><img src="reference/figures/README-unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;"></p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -155,9 +152,9 @@
 </tr>
 </tbody>
 </table>
-<div class="figure">
-<img src="reference/figures/README-fig-waste-skips-simple-1.png" alt="A small visualisation of this data set" width="100%"><p class="caption">
-A small visualisation of this data set
+<div class="figure" style="text-align: center">
+<img src="reference/figures/README-fig-waste-skips-simple-1.png" alt="Map of waste skips in this dataset" width="100%"><p class="caption">
+Map of waste skips in this dataset
 </p>
 </div>
 </div>
@@ -165,7 +162,7 @@ A small visualisation of this data set
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>This is a basic example which shows you how to use the data:</p>
+<p>The code below is an example which shows how you could use the data to prepare a map in R. Find this and more examples in the <a href="https://openwashdata.github.io/wasteskipsblantyre/articles/examples.html" class="external-link">prepared examples article</a> (<code><a href="articles/examples.html">vignette("examples")</a></code>).</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">wasteskipsblantyre</span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
@@ -177,6 +174,11 @@ A small visualisation of this data set
 <span><span class="fu"><a href="https://rdrr.io/pkg/tmap/man/tmap_mode.html" class="external-link">tmap_mode</a></span><span class="op">(</span><span class="st">"view"</span><span class="op">)</span></span>
 <span><span class="co"># create an interactive map </span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/tmap/man/qtm.html" class="external-link">qtm</a></span><span class="op">(</span><span class="va">sf_wsb</span><span class="op">)</span></span></code></pre></div>
+<div class="figure" style="text-align: center">
+<img src="reference/figures/screenshot-map-waste-skips-blantyre.png" alt="Screenshot of the an interactive map with OpenStreetMap layer." width="100%"><p class="caption">
+Screenshot of the an interactive map with OpenStreetMap layer.
+</p>
+</div>
 </div>
 </div>
 
@@ -200,10 +202,10 @@ A small visualisation of this data set
 <li>So <em>who</em> does the work?</li>
 <li>Mabvuto Yesaya <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-3234-9699" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>Limbani Msuku <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-9291-8462" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Lars Schöbitz <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-2196-5015" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Lars Schöbitz <br><small class="roles"> Contributor </small> <a href="https://orcid.org/0000-0003-2196-5015" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>Elizabeth Tilley <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-2095-9724" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Mian Zhong <br><small class="roles"> Author </small> <a href="https://orcid.org/0009-0009-4546-7214" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Sebastian Camilo Loos <br><small class="roles"> Maintainer </small> <a href="https://orcid.org/0000-0002-8830-1734" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Mian Zhong <br><small class="roles"> Contributor </small> <a href="https://orcid.org/0009-0009-4546-7214" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Sebastian Camilo Loos <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-8830-1734" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>Thanks all!</li>
 </ul>
 </div>

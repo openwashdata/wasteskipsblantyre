@@ -10,11 +10,12 @@
 
 <!-- badges: end -->
 
-# Overview
+The goal of wasteskipsblantyre is to provide a great dataset for
+research and planning of solid waste management in Blantyre, Malawi. The
+dataset includes locations of the publicly accessible waste skips in in
+the city. The data was collected in 2021 and has not been updated since.
 
-The wasteskipsblantyre data package includes locations of the publicly
-accessible waste skips in Blantyre, Malawi. The data was collected in
-2021.
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" />
 
 ## Installation
 
@@ -29,31 +30,21 @@ devtools::install_github("openwashdata/wasteskipsblantyre")
 Alternatively, you can download the individual datasets as a CSV or XLSX
 file from the table below.
 
-| dataset            | CSV                                                                              | XLSX                                                                               |
-|:-------------------|:---------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
-| wasteskipsblantyre | [Download CSV](wasteskipsblantyre/tree/main/inst/extdata/wasteskipsblantyre.csv) | [Download XLSX](wasteskipsblantyre/tree/main/inst/extdata/wasteskipsblantyre.xlsx) |
+| dataset            | CSV                                                                             | XLSX                                                                              |
+|:-------------------|:--------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|
+| wasteskipsblantyre | [Download CSV](wasteskipsblantyre/raw/main/inst/extdata/wasteskipsblantyre.csv) | [Download XLSX](wasteskipsblantyre/raw/main/inst/extdata/wasteskipsblantyre.xlsx) |
 
-# Project
+## Project goal
 
-## TITLE_OF_PROJECT
+Data on the location of public waste skips in Blanytre was not
+available. Without such data, it becomes difficult to develop a solid
+waste management plan and logistics. The goal of this project was to
+identify the locations of public waste skips in Blantyre, Malawi.
 
-(One sentence) Evaluating the potential of ……..
+## Data
 
-### Description
-
-(One to two short paragraphs) This Project focuses on determining …….
-
-### Research Question
-
-(One to two questions)
-
-### Data
-
-The data set inlcludes the locations of the publicly accessible waste
-skips in Blantyre, Malawi. In the context of the **PROJECT_NAME**
-project described above the data was collected in **MONTH** of 2021.
-
-The package provides access to one data set.
+The data set includes the locations of the publicly accessible waste
+skips in Blantyre, Malawi. The data was collected in 2021.
 
 ``` r
 library(wasteskipsblantyre)
@@ -73,18 +64,22 @@ wasteskipsblantyre
 | lat           | double        | Latitude of the location as decimal degrees.  |
 | capacity_l    | double        | Capacity of the container in liters.          |
 
-<div class="figure">
+<div class="figure" style="text-align: center">
 
-<img src="man/figures/README-fig-waste-skips-simple-1.png" alt="A small visualisation of this data set" width="100%" />
+<img src="man/figures/README-fig-waste-skips-simple-1.png" alt="Locations of waste skips in this dataset" width="100%" />
 <p class="caption">
-A small visualisation of this data set
+Locations of waste skips in this dataset
 </p>
 
 </div>
 
 ## Example
 
-This is a basic example which shows you how to use the data:
+The code below is an example which shows how you could use the data to
+prepare a map in R. Find this and more examples in the [prepared
+examples
+article](https://openwashdata.github.io/wasteskipsblantyre/articles/examples.html)
+(`vignette("examples")`).
 
 ``` r
 library(wasteskipsblantyre)
@@ -98,3 +93,12 @@ tmap_mode("view")
 # create an interactive map 
 qtm(sf_wsb)
 ```
+
+<div class="figure" style="text-align: center">
+
+<img src="man/figures/screenshot-map-waste-skips-blantyre.png" alt="Screenshot of the an interactive map with OpenStreetMap layer." width="100%" />
+<p class="caption">
+Screenshot of the an interactive map with OpenStreetMap layer.
+</p>
+
+</div>

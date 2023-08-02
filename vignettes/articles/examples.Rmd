@@ -24,7 +24,9 @@ knitr::opts_chunk$set(
   fig.path = here::here("docs", "articles", "examples_files", "figure-html", "figure-"),
   out.width = "100%",
   message = FALSE,
-  warning = FALSE
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
 )
 ```
 
