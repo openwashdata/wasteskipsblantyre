@@ -217,4 +217,15 @@ qtm(sf_wsb)
 knitr::include_graphics("man/figures/screenshot-map-waste-skips-blantyre.png")
 ```
 
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/wasteskipsblantyre/blob/main/LICENSE.md).
+
 ## Citation
+
+Please cite using:
+
+```{r}
+citation("wasteskipsblantyre")
+```

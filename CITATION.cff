@@ -49,11 +49,12 @@ preferred-citation:
     given-names: Sebastian Camilo
     email: seba.loos@hotmail.com
     orcid: https://orcid.org/0000-0002-8830-1734
-  doi: 10.5281/zenodo.6470427
   year: '2023'
+  doi: 10.5281/zenodo.6470427
   abstract: An R data package containing the locations of public waste skips in Blantyre,
     Malawi.
   version: 0.0.2
+url: https://openwashdata.github.io/wasteskipsblantyre/
 date-released: '2023-08-02'
 contact:
 - family-names: Loos

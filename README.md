@@ -10,10 +10,10 @@
 
 <!-- badges: end -->
 
-The goal of wasteskipsblantyre is to provide a great dataset for
-research and planning of solid waste management in Blantyre, Malawi. The
-dataset includes locations of the publicly accessible waste skips in in
-the city. The data was collected in 2021 and has not been updated since.
+The goal of wasteskipsblantyre is to provide a dataset for research and
+planning of solid waste management in Blantyre, Malawi. The dataset
+includes locations of the publicly accessible waste skips in in the
+city. The data was collected in 2021 and has not been updated since.
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" />
 
@@ -102,3 +102,32 @@ Screenshot of the an interactive map with OpenStreetMap layer.
 </p>
 
 </div>
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/wasteskipsblantyre/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite using:
+
+``` r
+citation("wasteskipsblantyre")
+#> To cite package 'wasteskipsblantyre' in publications use:
+#> 
+#>   Yesaya M, Msuku L, Tilley E, Loos S (2023). "wasteskipsblantyre:
+#>   Locations of Public Waste Skips in Blantyre, Malawi."
+#>   doi:10.5281/zenodo.6470427 <https://doi.org/10.5281/zenodo.6470427>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Misc{yesayamsuku,
+#>     title = {wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi},
+#>     author = {Mabvuto Yesaya and Limbani Msuku and Elizabeth Tilley and Sebastian Camilo Loos},
+#>     doi = {10.5281/zenodo.6470427},
+#>     year = {2023},
+#>     abstract = {An R data package containing the locations of public waste skips in Blantyre, Malawi.},
+#>     version = {0.0.2},
+#>   }
+```
