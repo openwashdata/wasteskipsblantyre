@@ -134,7 +134,7 @@ file from the table below.
 
 ```{r, echo=FALSE}
 
-extdata_path <- "wasteskipsblantyre/raw/main/inst/extdata/"
+extdata_path <- "https://github.com/openwashdata/wasteskipsblantyre/raw/main/inst/extdata/"
 
 read_csv("data-raw/dictionary.csv") |> 
   distinct(file_name) |> 

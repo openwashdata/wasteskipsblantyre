@@ -30,9 +30,9 @@ devtools::install_github("openwashdata/wasteskipsblantyre")
 Alternatively, you can download the individual datasets as a CSV or XLSX
 file from the table below.
 
-| dataset            | CSV                                                                             | XLSX                                                                              |
-|:-------------------|:--------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|
-| wasteskipsblantyre | [Download CSV](wasteskipsblantyre/raw/main/inst/extdata/wasteskipsblantyre.csv) | [Download XLSX](wasteskipsblantyre/raw/main/inst/extdata/wasteskipsblantyre.xlsx) |
+| dataset            | CSV                                                                                                             | XLSX                                                                                                              |
+|:-------------------|:----------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------|
+| wasteskipsblantyre | [Download CSV](https://github.com/openwashdata/wasteskipsblantyre/raw/main/inst/extdata/wasteskipsblantyre.csv) | [Download XLSX](https://github.com/openwashdata/wasteskipsblantyre/raw/main/inst/extdata/wasteskipsblantyre.xlsx) |
 
 ## Project goal
 
