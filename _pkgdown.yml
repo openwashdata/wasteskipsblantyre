@@ -1,9 +1,9 @@
-url: https://github.com/openwashdata/wasteskipsblantyre
+url: https://openwashdata.github.io/wasteskipsblantyre
 template:
   bootstrap: 5
   includes:
     in_header: |
-      <script defer data-domain="openwashdata.github.io" src="https://plausible.io/js/script.js"></script>
+      <script defer data-domain="openwashdata.github.io/wasteskipsblantyre" src="https://plausible.io/js/script.js"></script>
 
 home:
   links:
