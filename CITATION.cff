@@ -10,7 +10,6 @@ license: CC-BY-4.0
 title: 'wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi'
 version: 0.0.2
 doi: 10.5281/zenodo.6470427
-year: 2023
 abstract: An R data package containing the locations of public waste skips in Blantyre,
   Malawi.
 authors:
@@ -51,6 +50,7 @@ preferred-citation:
     email: seba.loos@hotmail.com
     orcid: https://orcid.org/0000-0002-8830-1734
   doi: 10.5281/zenodo.6470427
+  year: '2023'
   abstract: An R data package containing the locations of public waste skips in Blantyre,
     Malawi.
   version: 0.0.2
