@@ -10,6 +10,7 @@ license: CC-BY-4.0
 title: 'wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi'
 version: 0.0.2
 doi: 10.5281/zenodo.6470427
+year: 2023
 abstract: An R data package containing the locations of public waste skips in Blantyre,
   Malawi.
 authors:
@@ -29,6 +30,31 @@ authors:
   given-names: Sebastian Camilo
   email: seba.loos@hotmail.com
   orcid: https://orcid.org/0000-0002-8830-1734
+preferred-citation:
+  type: generic
+  title: 'wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi'
+  authors:
+  - family-names: Yesaya
+    given-names: Mabvuto
+    email: yesayamabvuto@gmail.com
+    orcid: https://orcid.org/0000-0003-3234-9699
+  - family-names: Msuku
+    given-names: Limbani
+    email: limbani_msuku@yahoo.com
+    orcid: https://orcid.org/0000-0002-9291-8462
+  - family-names: Tilley
+    given-names: Elizabeth
+    email: tilleye@ethz.ch
+    orcid: https://orcid.org/0000-0002-2095-9724
+  - family-names: Loos
+    given-names: Sebastian Camilo
+    email: seba.loos@hotmail.com
+    orcid: https://orcid.org/0000-0002-8830-1734
+  doi: 10.5281/zenodo.6470427
+  abstract: An R data package containing the locations of public waste skips in Blantyre,
+    Malawi.
+  version: 0.0.2
+date-released: '2023-08-02'
 contact:
 - family-names: Loos
   given-names: Sebastian Camilo

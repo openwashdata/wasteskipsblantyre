@@ -1,0 +1,16 @@
+
+bibentry(bibtype = "Misc",
+         key = "yesayamsuku",
+         title = "wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi",
+         author = c(person(given = "Mabvuto",
+                           family = "Yesaya"),
+                    person(given = "Limbani",
+                           family = "Msuku"),
+                    person(given = "Elizabeth",
+                           family = "Tilley"),
+                    person(given = "Sebastian Camilo",
+                           family = "Loos")),
+         doi = "10.5281/zenodo.6470427",
+         year = 2023,
+         abstract = "An R data package containing the locations of public waste skips in Blantyre, Malawi.",
+         version = "0.0.2")
