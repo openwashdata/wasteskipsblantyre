@@ -50,3 +50,6 @@ rsconnect/
 
 # Mac files
 .DS_Store
+
+# citation helper file
+citation.R

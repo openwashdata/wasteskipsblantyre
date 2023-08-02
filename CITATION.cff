@@ -8,7 +8,8 @@ message: 'To cite package "wasteskipsblantyre" in publications use:'
 type: software
 license: CC-BY-4.0
 title: 'wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi'
-version: 0.0.0.9000
+version: 0.0.2
+doi: 10.5281/zenodo.6470427
 abstract: An R data package containing the locations of public waste skips in Blantyre,
   Malawi.
 authors:
@@ -33,16 +34,3 @@ contact:
   given-names: Sebastian Camilo
   email: seba.loos@hotmail.com
   orcid: https://orcid.org/0000-0002-8830-1734
-references:
-- type: software
-  title: 'R: A Language and Environment for Statistical Computing'
-  notes: Depends
-  url: https://www.R-project.org/
-  authors:
-  - name: R Core Team
-  location:
-    name: Vienna, Austria
-  year: '2023'
-  institution:
-    name: R Foundation for Statistical Computing
-  version: '>= 2.10'
