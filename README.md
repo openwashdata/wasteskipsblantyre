@@ -7,7 +7,7 @@
 
 [![DOI](https://zenodo.org/badge/483225869.svg)](https://zenodo.org/badge/latestdoi/483225869)
 [![R-CMD-check](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/wasteskipsblantyre/actions/workflows/R-CMD-check.yaml)
-
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end -->
 
 The goal of wasteskipsblantyre is to provide a dataset for research and
