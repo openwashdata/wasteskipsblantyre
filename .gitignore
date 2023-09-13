@@ -53,3 +53,7 @@ rsconnect/
 
 # citation helper file
 citation.R
+
+# *.bk1
+
+*.bk1
