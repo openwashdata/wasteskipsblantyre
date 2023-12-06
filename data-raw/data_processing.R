@@ -16,17 +16,20 @@ library(stringr)
 
 # read data ---------------------------------------------------------------
 
-locations <- read_sf("./data-raw/gps_marked_skips_in_blantyre.kml")
+## read original data and prepare small dataset that does not include
+## sensitive or personal information. original data is ignored from git.
 
-st_bbox(locations)
+#read_delim("data-raw/skips_dataset.csv", delim = ";") |> 
+#  janitor::clean_names() |> 
+#  select(market_skip_norm:notes) |> 
+#  write_csv("data-raw/skips_dataset_sml.csv")
 
-wasteskipsblantyre <- locations |> 
-  mutate(long = unlist(map(locations$geometry, 1)),
-         lat = unlist(map(locations$geometry, 2))) |> 
-  st_drop_geometry() |> 
-  select(-Description) |>  
-  rename("name" = Name) |> 
-  # enrich data
-  mutate(capacity_l = 7000)
+data_in <- read_csv("data-raw/skips_dataset_sml.csv")
 
-usethis::use_data(wasteskipsblantyre, overwrite = TRUE)
+skips <- data_in |> 
+  rename(name = market_skip_norm) |> 
+  rename(name_other = other_designations) |> 
+  mutate(capacity = 7000) |> 
+  relocate(capacity, .after = number_skips)
+
+usethis::use_data(skips, overwrite = TRUE)
