@@ -1,5 +1,17 @@
 directory,file_name,variable_name,variable_type,description
-data/,wasteskipsblantyre,name,character,Name of the waste skip location.
-data/,wasteskipsblantyre,long,double,Longitude of the location as decimal degrees.
-data/,wasteskipsblantyre,lat,double,Latitude of the location as decimal degrees.
-data/,wasteskipsblantyre,capacity_l,double,Capacity of the container in liters.
+data/,skips.rda,name,character,NA
+data/,skips.rda,name_other,character,NA
+data/,skips.rda,supervision_area,character,NA
+data/,skips.rda,context,character,NA
+data/,skips.rda,direct_access,character,NA
+data/,skips.rda,fillup,double,NA
+data/,skips.rda,fillup_dry,double,NA
+data/,skips.rda,fillup_rainy,double,NA
+data/,skips.rda,number_skips,double,NA
+data/,skips.rda,capacity,double,NA
+data/,skips.rda,y,double,NA
+data/,skips.rda,x,double,NA
+data/,skips.rda,notes,character,NA
+data/,poi.rda,poi,character,NA
+data/,poi.rda,lat,double,NA
+data/,poi.rda,long,double,NA

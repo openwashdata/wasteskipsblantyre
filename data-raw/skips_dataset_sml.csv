@@ -1,0 +1,68 @@
+market_skip_norm,other_designations,supervision_area,context,direct_access,fillup,fillup_dry,fillup_rainy,number_skips,y,x,notes
+blantyre produce market,"blantyre, blantyre produce,blantyre produce market,blantyre market",Blantyre,market,through market (dirt path),NA,1,0.5,1,-15.791068,35.00696,"Big issues with overflowing in rainy season, waste inside the market building. Most WASTE installed bins are broken (according to them). During rain season, 4-5 day wait to get collected after first overflow of a skip before it is emptied."
+mbayani,NA,NA,NA,NA,NA,NA,NA,0,-15.775925,35.007859,"Told there hasn't been a skip in 3 years. Composting facility built by German development agency, plastic waste thrown over side of hill. "
+chemusa,NA,Blantyre,market,paved road,3,3,NA,1,-15.766006,34.99936,NA
+chirimba,NA,Blantyre,market,dirt road,2,NA,NA,1,-15.744681,35.019198,Takes two days to fill up
+chinseu,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,"Reportedly no more skips there, skips removed due to vendor complaints"
+ndirande,NA,Ginnery Corner,market,paved road,NA,NA,NA,2,-15.776998,35.036692,NA
+safarao,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,"Reportedly no more skips there, skips removed due to vendor complaints"
+limbe flea market,NA,Limbe,market,through market (dirt path),6,NA,NA,1,-15.816282,35.056252,NA
+limbe produce market,NA,Limbe,market,through market (dirt path),NA,NA,NA,2,-15.817877,35.05576,Area cleansing supervisor estimates there needs 2 more to not have overflow
+pafumbi bus,NA,Limbe,other,dirt road,NA,NA,NA,1,-15.819399,35.054275,NA
+ITG,NA,Limbe,other,dirt road,NA,NA,NA,2,-15.819945,35.059309,NA
+bangwe market,NA,Limbe,market,through market (dirt path),NA,NA,NA,2,-15.835162,35.087989,Area cleansing supervisor estimates there needs 1 more to mitigate overflowing in rainy season
+bangwe ground,NA,Limbe,market,through market (dirt path),NA,NA,NA,1,-15.83307,35.088249,NA
+naizi,NA,Limbe,market,through market (dirt path),NA,NA,NA,2,-15.841398,35.089437,NA
+BCA market,NA,Limbe,market,dirt road,NA,NA,NA,1,-15.839022,35.075069,One was destroyed by the cyclone in march 2023
+chigumula likotima,"chigumula b,likotima",Limbe,market,through market (dirt path),NA,NA,NA,1,-15.853959,35.05674,NA
+chigumula main,"chigumula a,main",Limbe,market,through market (dirt path),NA,NA,NA,2,-15.886226,35.063088,NA
+kachere,NA,Limbe,market,paved road,3,NA,NA,1,-15.790015,35.08564,"No mention of another skip in Kachere market. Picture of other in WASTE skips dataset only shows the skip ""house"""
+nkolokoti,NA,Limbe,market,through market (dirt path),NA,NA,NA,1,-15.790558,35.069467,NA
+khama,NA,Limbe,market,paved road,NA,NA,NA,1,-15.7677,35.0745,NA
+nanjiri,NA,Limbe,market,paved road,NA,NA,NA,1,-15.7447,35.0811,NA
+south lunzu,NA,Limbe,market,through market (dirt path),NA,NA,NA,1,-15.730886,35.056115,NA
+kamba,"kamba,soche market",Soche,market,through market (dirt path),NA,7,5,1,-15.809408,35.015302,NA
+thawale,"zingwangwa,thawale",Soche,market,dirt road,NA,2,1,1,-15.818641,35.013449,NA
+chimwankhunda,NA,Soche,residential,dirt road,NA,7,5,1,-15.824438,35.013879,NA
+chilobwe police,NA,Soche,residential,dirt road,3,NA,NA,1,-15.832503,35.005804,NA
+zingwangwa mosque,NA,Soche,residential,dirt road,NA,7,4,1,-15.816962,35.011709,NA
+zingwangwa waterboard,NA,Soche,residential,dirt road,7,NA,NA,1,-15.816168,35.014583,NA
+queens guardian shelter,NA,Ginnery Corner,residential,dirt road,NA,14,3,1,-15.8029,35.0193,NA
+namwalimwe,NA,Ginnery Corner,residential,paved road,NA,21,7,1,-15.7825,35.0354,NA
+chilunga,"chilunga,matope",Ginnery Corner,residential,dirt road,21,NA,NA,1,-15.7765,35.0483,To the side of the road in the middle of construction rubble for the road
+mibawa,NA,Blantyre,market,paved road,3,NA,NA,2,-15.788659000000001,35.007426,NA
+blantyre flea market,NA,Blantyre,market,paved road/through market,1,NA,NA,0,-15.788709,35.006394,NA
+mbwerera,NA,Blantyre,residential,paved road,7,NA,NA,1,-15.7706,34.9945,NA
+chilomoni fargo,NA,Blantyre,residential,dirt road,5,NA,NA,1,-15.7759,34.9811,NA
+chilomoni market,NA,Blantyre,market,through market (dirt path),5,NA,NA,1,-15.7734,34.9817,NA
+nthukwa,NA,Blantyre,market,through market (dirt path),4,NA,NA,1,-15.7638,34.9801,NA
+manase,NA,Blantyre,market,through market (dirt path),7,NA,NA,1,-15.811957,34.993324,"Only working skip handler can't fit, they service with compactor while the other is getting repaired"
+kameza roundabout,NA,Blantyre,market,paved road,NA,NA,NA,1,-15.724875,35.018847,NA
+mapeto,NA,Private,NA,NA,NA,NA,NA,NA,-15.791154,35.030642,NA
+kayange,NA,NA,NA,NA,NA,NA,NA,NA,-15.775705,35.002751,NA
+CFAO,NA,Private,NA,NA,NA,NA,NA,NA,-15.794062,35.011608,NA
+valmole paint,NA,Private,NA,NA,NA,NA,NA,NA,-15.791334,35.019226,NA
+wenera,NA,Private,NA,NA,NA,NA,NA,NA,-15.785647,35.015758,NA
+barroworld,NA,Private,NA,NA,NA,NA,NA,NA,-15.797722,35.028758,NA
+limbe hardware,NA,Limbe,NA,NA,NA,NA,NA,0,NA,NA,Moved to Pafumbi bus station
+limbe jumani,NA,Limbe,NA,NA,NA,NA,NA,0,NA,NA,Removed
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
