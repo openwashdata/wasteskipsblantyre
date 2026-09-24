@@ -1,18 +1,29 @@
+#' skips: Public waste skip locations in Blantyre, Malawi
+#'
+#' Public waste skip locations in Blantyre, Malawi, from the 2023 update of
+#' the dataset. Each row is a skip location with its names, cleansing
+#' supervision area, surrounding context, vehicle access, the number of skips
+#' and the fill-up times reported by the people surveyed. The dataset
+#' replaces `wasteskipsblantyre` (53 skip locations collected in 2021).
+#'
+#' @format A tibble with 67 rows and 13 variables. Rows 48 to 67 (20 rows)
+#'   have no name, no location and no other values; they carry only the
+#'   constant `capacity` value (see
+#'   <https://github.com/openwashdata/wasteskipsblantyre/issues/11>). A
+#'   further 4 named locations have no coordinates.
 #' \describe{
-#'   \item{name}{NA}
-#'   \item{name_other}{NA}
-#'   \item{supervision_area}{NA}
-#'   \item{context}{NA}
-#'   \item{direct_access}{NA}
-#'   \item{fillup}{NA}
-#'   \item{fillup_dry}{NA}
-#'   \item{fillup_rainy}{NA}
-#'   \item{number_skips}{NA}
-#'   \item{capacity}{NA}
-#'   \item{y}{NA}
-#'   \item{x}{NA}
-#'   \item{notes}{NA}
-#'   \item{poi}{NA}
-#'   \item{lat}{NA}
-#'   \item{long}{NA}
+#'   \item{name}{Main name of skip location.}
+#'   \item{name_other}{Alternative names of skip location separated by commas.}
+#'   \item{supervision_area}{Cleansing supervision area.}
+#'   \item{context}{Type of urban environment surrounding skip location.}
+#'   \item{direct_access}{Vehicle access path type.}
+#'   \item{fillup}{Number of days to fill up according to person surveyed.}
+#'   \item{fillup_dry}{Number of days to fill up in dry season according to person surveyed.}
+#'   \item{fillup_rainy}{Number of days to fill up in rainy season according to person surveyed.}
+#'   \item{number_skips}{Number of skips at skip location.}
+#'   \item{capacity}{Capacity of one skip in litres.}
+#'   \item{y}{Y (latitude) coordinate in WGS 84.}
+#'   \item{x}{X (longitude) coordinate in WGS 84.}
+#'   \item{notes}{Notes relating to skip location.}
 #' }
+"skips"

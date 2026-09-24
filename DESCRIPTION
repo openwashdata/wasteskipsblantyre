@@ -19,9 +19,9 @@ Description: An R data package containing the locations of public waste skips in
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
 Depends:
     R (>= 2.10)
 LazyData: true
 Language: en-GB
 Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0
