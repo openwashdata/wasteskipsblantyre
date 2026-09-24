@@ -1,17 +1,17 @@
 directory,file_name,variable_name,variable_type,description
-data/,skips.rda,name,character,NA
-data/,skips.rda,name_other,character,NA
-data/,skips.rda,supervision_area,character,NA
-data/,skips.rda,context,character,NA
-data/,skips.rda,direct_access,character,NA
-data/,skips.rda,fillup,double,NA
-data/,skips.rda,fillup_dry,double,NA
-data/,skips.rda,fillup_rainy,double,NA
-data/,skips.rda,number_skips,double,NA
-data/,skips.rda,capacity,double,NA
-data/,skips.rda,y,double,NA
-data/,skips.rda,x,double,NA
-data/,skips.rda,notes,character,NA
-data/,poi.rda,poi,character,NA
-data/,poi.rda,lat,double,NA
-data/,poi.rda,long,double,NA
+data/,skips.rda,name,character,Main name of skip location.
+data/,skips.rda,name_other,character,Alternative names of skip location separated by commas.
+data/,skips.rda,supervision_area,character,Cleansing supervision area.
+data/,skips.rda,context,character,Type of urban environment surrounding skip location.
+data/,skips.rda,direct_access,character,Vehicle access path type.
+data/,skips.rda,fillup,double,Number of days to fill up according to person surveyed.
+data/,skips.rda,fillup_dry,double,Number of days to fill up in dry season according to person surveyed.
+data/,skips.rda,fillup_rainy,double,Number of days to fill up in rainy season according to person surveyed.
+data/,skips.rda,number_skips,double,Number of skips at skip location.
+data/,skips.rda,capacity,double,Capacity of one skip in litres.
+data/,skips.rda,y,double,Y (latitude) coordinate in WGS 84.
+data/,skips.rda,x,double,X (longitude) coordinate in WGS 84.
+data/,skips.rda,notes,character,Notes relating to skip location.
+data/,poi.rda,poi,character,Point of interest.
+data/,poi.rda,lat,double,Y (latitude) coordinate in WGS 84.
+data/,poi.rda,long,double,X (longitude) coordinate in WGS 84.

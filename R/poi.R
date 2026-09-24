@@ -1,18 +1,13 @@
+#' poi: Points of interest for waste collection in Blantyre, Malawi
+#'
+#' Points of interest for the collection of waste from the public skips in
+#' Blantyre, Malawi: the depot, the Mzedi dump site, the compost site and
+#' two gas stations.
+#'
+#' @format A tibble with 5 rows and 3 variables:
 #' \describe{
-#'   \item{name}{NA}
-#'   \item{name_other}{NA}
-#'   \item{supervision_area}{NA}
-#'   \item{context}{NA}
-#'   \item{direct_access}{NA}
-#'   \item{fillup}{NA}
-#'   \item{fillup_dry}{NA}
-#'   \item{fillup_rainy}{NA}
-#'   \item{number_skips}{NA}
-#'   \item{capacity}{NA}
-#'   \item{y}{NA}
-#'   \item{x}{NA}
-#'   \item{notes}{NA}
-#'   \item{poi}{NA}
-#'   \item{lat}{NA}
-#'   \item{long}{NA}
+#'   \item{poi}{Point of interest.}
+#'   \item{lat}{Y (latitude) coordinate in WGS 84.}
+#'   \item{long}{X (longitude) coordinate in WGS 84.}
 #' }
+"poi"
