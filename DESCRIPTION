@@ -17,7 +17,7 @@ Authors@R: c(
     person("Nicolas", "Seemann-Ricard", , "nseemann@ethz.ch", role = "aut",
            comment = c(ORCID = "0000-0002-0945-7475"))
   )
-Description: An R data package containing the locations of public waste skips in Blantyre, Malawi.
+Description: An R data package containing the locations of public waste skips in Blantyre, Malawi, updated in 2023, with the number of skips, vehicle access and the fill-up times reported at each location, and the points of interest for their collection (depot, dump site, compost site and gas stations).
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -25,5 +25,5 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Language: en-GB
-Config/Needs/website: rmarkdown
+Config/Needs/website: rmarkdown, bookdown, here, sf, tidyverse
 Config/roxygen2/version: 8.0.0

@@ -6,7 +6,7 @@
 \alias{wasteskipsblantyre-package}
 \title{wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi}
 \description{
-An R data package containing the locations of public waste skips in Blantyre, Malawi.
+An R data package containing the locations of public waste skips in Blantyre, Malawi, updated in 2023, with the number of skips, vehicle access and the fill-up times reported at each location, and the points of interest for their collection (depot, dump site, compost site and gas stations).
 }
 \author{
 \strong{Maintainer}: Lars Schöbitz \email{lschoebitz@ethz.ch} (\href{https://orcid.org/0000-0003-2196-5015}{ORCID}) [contributor]
