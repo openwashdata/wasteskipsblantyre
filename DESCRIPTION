@@ -27,3 +27,9 @@ LazyData: true
 Language: en-GB
 Config/Needs/website: rmarkdown, bookdown, here, sf, tidyverse
 Config/roxygen2/version: 8.0.0
+URL: https://github.com/openwashdata/wasteskipsblantyre,
+    https://openwashdata.github.io/wasteskipsblantyre/
+BugReports: https://github.com/openwashdata/wasteskipsblantyre/issues
+X-schema.org-keywords: open data, washdata, solid waste, waste skips, waste collection, Blantyre, Malawi
+X-schema.org-spatialCoverage: Blantyre, Malawi
+X-schema.org-temporalCoverage: 2023-01-01/2023-12-31
