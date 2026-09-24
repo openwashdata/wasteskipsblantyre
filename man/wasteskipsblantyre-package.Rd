@@ -2,25 +2,26 @@
 % Please edit documentation in R/wasteskipsblantyre-package.R
 \docType{package}
 \name{wasteskipsblantyre-package}
+\alias{wasteskipsblantyre}
 \alias{wasteskipsblantyre-package}
-\alias{_PACKAGE}
 \title{wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi}
 \description{
-An R data package containing the locations of public waste skips in Blantyre, Malawi.
+An R data package containing the locations of public waste skips in Blantyre, Malawi, updated in 2023, with the number of skips, vehicle access and the fill-up times reported at each location, and the points of interest for their collection (depot, dump site, compost site and gas stations).
 }
 \author{
-\strong{Maintainer}: Sebastian Camilo Loos \email{seba.loos@hotmail.com} (\href{https://orcid.org/0000-0002-8830-1734}{ORCID})
+\strong{Maintainer}: Lars Schöbitz \email{lschoebitz@ethz.ch} (\href{https://orcid.org/0000-0003-2196-5015}{ORCID}) [contributor]
 
 Authors:
 \itemize{
   \item Mabvuto Yesaya \email{yesayamabvuto@gmail.com} (\href{https://orcid.org/0000-0003-3234-9699}{ORCID})
   \item Limbani Msuku \email{limbani_msuku@yahoo.com} (\href{https://orcid.org/0000-0002-9291-8462}{ORCID})
   \item Elizabeth Tilley \email{tilleye@ethz.ch} (\href{https://orcid.org/0000-0002-2095-9724}{ORCID})
+  \item Sebastian Camilo Loos \email{seba.loos@hotmail.com} (\href{https://orcid.org/0000-0002-8830-1734}{ORCID})
+  \item Nicolas Seemann-Ricard \email{nseemann@ethz.ch} (\href{https://orcid.org/0000-0002-0945-7475}{ORCID})
 }
 
 Other contributors:
 \itemize{
-  \item Lars Schöbitz \email{lschoebitz@ethz.ch} (\href{https://orcid.org/0000-0003-2196-5015}{ORCID}) [contributor]
   \item Mian Zhong \email{mzhong@ethz.ch} (\href{https://orcid.org/0009-0009-4546-7214}{ORCID}) [contributor]
 }
 
