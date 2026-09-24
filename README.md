@@ -140,20 +140,21 @@ Please cite using:
 citation("wasteskipsblantyre")
 #> To cite package 'wasteskipsblantyre' in publications use:
 #> 
-#>   Yesaya M, Msuku L, Tilley E, Loos S (2023). "wasteskipsblantyre:
-#>   Locations of Public Waste Skips in Blantyre, Malawi."
-#>   doi:10.5281/zenodo.6470427 <https://doi.org/10.5281/zenodo.6470427>.
+#>   Yesaya M, Msuku L, Schöbitz L, Tilley E, Loos S, Seemann-Ricard N
+#>   (????). "wasteskipsblantyre: Locations of Public Waste Skips in
+#>   Blantyre, Malawi." doi:10.5281/zenodo.6470364
+#>   <https://doi.org/10.5281/zenodo.6470364>.
 #>   <https://openwashdata.github.io/wasteskipsblantyre/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Misc{yesayamsuku:2023,
+#>   @Misc{yesaya_etall,
 #>     title = {wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi},
-#>     author = {Mabvuto Yesaya and Limbani Msuku and Elizabeth Tilley and Sebastian Camilo Loos},
-#>     year = {2023},
+#>     author = {Mabvuto Yesaya and Limbani Msuku and Lars Schöbitz and Elizabeth Tilley and Sebastian Camilo Loos and Nicolas Seemann-Ricard},
+#>     doi = {10.5281/zenodo.6470364},
 #>     url = {https://openwashdata.github.io/wasteskipsblantyre/},
-#>     doi = {10.5281/zenodo.6470427},
-#>     abstract = {An R data package containing the locations of public waste skips in Blantyre, Malawi.},
-#>     version = {0.0.2},
+#>     abstract = {An R data package containing the locations of public waste skips in Blantyre, Malawi, updated in 2023, with the number of skips, vehicle access and the fill-up times reported at each location, and the points of interest for their collection (depot, dump site, compost site and gas stations).},
+#>     keywords = {open data,washdata,solid waste,waste skips,waste collection,Blantyre,Malawi,data-visualization,geolocation,malawi,open-data,open-datasets,r,solid-waste,waste-management},
+#>     version = {0.1.0},
 #>   }
 ```

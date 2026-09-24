@@ -1,4 +1,4 @@
-url: https://openwashdata.github.io/wasteskipsblantyre
+url: https://openwashdata.github.io/wasteskipsblantyre/
 template:
   bootstrap: 5
   includes:
@@ -26,3 +26,10 @@ authors:
     roles: [cre, aut, ctb]
     before: "So *who* does the work?"
     after: "Thanks all!"
+
+reference:
+- title: "Data"
+  desc: "Access the skips and poi datasets"
+  contents:
+  - skips
+  - poi
