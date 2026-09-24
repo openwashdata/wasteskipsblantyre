@@ -13,7 +13,9 @@ Authors@R: c(
     person("Mian", "Zhong", , "mzhong@ethz.ch", role = "ctb",
            comment = c(ORCID = "0009-0009-4546-7214")),
     person("Sebastian Camilo", "Loos", , "seba.loos@hotmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-8830-1734"))
+           comment = c(ORCID = "0000-0002-8830-1734")),
+    person("Nicolas", "Seemann-Ricard", , "nseemann@ethz.ch", role = "aut",
+           comment = c(ORCID = "0000-0002-0945-7475"))
   )
 Description: An R data package containing the locations of public waste skips in Blantyre, Malawi.
 License: CC BY 4.0

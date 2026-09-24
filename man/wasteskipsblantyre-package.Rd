@@ -17,6 +17,7 @@ Authors:
   \item Mabvuto Yesaya \email{yesayamabvuto@gmail.com} (\href{https://orcid.org/0000-0003-3234-9699}{ORCID})
   \item Limbani Msuku \email{limbani_msuku@yahoo.com} (\href{https://orcid.org/0000-0002-9291-8462}{ORCID})
   \item Elizabeth Tilley \email{tilleye@ethz.ch} (\href{https://orcid.org/0000-0002-2095-9724}{ORCID})
+  \item Nicolas Seemann-Ricard \email{nseemann@ethz.ch} (\href{https://orcid.org/0000-0002-0945-7475}{ORCID})
 }
 
 Other contributors:
