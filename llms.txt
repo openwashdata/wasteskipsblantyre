@@ -1,5 +1,7 @@
 # wasteskipsblantyre
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 The goal of wasteskipsblantyre is to provide data for research and
 planning of solid waste management in Blantyre, Malawi. The package
 contains two datasets: `skips` holds the locations of the publicly
