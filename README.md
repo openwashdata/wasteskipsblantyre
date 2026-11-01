@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wasteskipsblantyre
+# wasteskipsblantyre <a href="https://openwashdata.org"><img src="man/figures/logo.png" align="right" width="120" alt="openwashdata" /></a>
 
 <!-- badges: start -->
 
@@ -11,8 +11,6 @@
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 <!-- badges: end -->
-
-A data package published by [openwashdata](https://openwashdata.org).
 
 The goal of wasteskipsblantyre is to provide data for research and
 planning of solid waste management in Blantyre, Malawi. The package
@@ -135,6 +133,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/wasteskipsblantyre/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite using:
 

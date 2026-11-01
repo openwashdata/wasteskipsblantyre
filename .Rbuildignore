@@ -10,3 +10,5 @@
 ^pkgdown$
 ^data-raw
 ^citation.R
+^_brand\.yml$
+^logos$

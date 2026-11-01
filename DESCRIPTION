@@ -25,7 +25,7 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Language: en-GB
-Config/Needs/website: rmarkdown, bookdown, here, sf, tidyverse
+Config/Needs/website: rmarkdown, bookdown, here, sf, tidyverse, brand.yml
 Config/roxygen2/version: 8.0.0
 URL: https://github.com/openwashdata/wasteskipsblantyre,
     https://openwashdata.github.io/wasteskipsblantyre/
@@ -43,4 +43,5 @@ Config/washr/publisher: Published by [openwashdata](https://openwashdata.org), a
 Config/washr/home: https://openwashdata.org
 Config/washr/catalog: https://openwashdata.org/pages/gallery/data/
 Config/washr/community: This package is part of [openwashdata](https://openwashdata.org). Browse the [data catalogue](https://openwashdata.org/pages/gallery/data/) or get the [newsletter](https://openwashdata.org/pages/newsletter/).
-Config/washr/version: 1.2.1
+Config/washr/version: 1.2.2
+Config/washr/brand: v1.1.0
